@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.img_section img:hover {
+    max-width: 100%;
+    box-shadow: 7px 7px 18px 3px black;
+}
+[class*="c-"]
+{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+@media only screen and (min-width: 500px) {
+.c-small-6
+{
+    width:50%;
+}
+}
+@media only screen and (min-width: 700px) {
+    .c-med-4
+    {
+        width:33.33%;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .c-large-3
+    {
+        width:25%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .c-ex-large-1
+    {
+        width:16.66%;
+    }
+}
