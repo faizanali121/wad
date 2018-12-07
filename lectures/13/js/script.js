@@ -27,11 +27,25 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    /*Write your code here */
+
+    currentQuestion=currentQuestion+1;
+    displayCurrentQuestion();
 }
 
-function displayCurrentQuestion() {
-    /*Write your code here */
+
+function displayCurrentQuestion()
+{
+    document.getElementById("question").innerText = questions[currentQuestion].question;
+    document.getElementById("choice-list").innerHTML = "none";
+    for(var i=0; i < 4; i++)
+    {
+        document.getElementById("choice-list").innerHTML += '<li> <input type="radio" name="t1" value="'+i+'"> '+questions[currentQuestion].choices[i] + '</li>';
+    }
+    if(document.querySelector("input[name ='t1']:checked").value===questions[currentQuestion].correctAnswer)
+    {
+        correctAnswers++;
+
+    }
 }
 
 function resetQuiz() {
