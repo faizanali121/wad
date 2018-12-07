@@ -40,14 +40,14 @@
 <div class="sav-acct-info acct-lft">
     <div class="acct-head">Deposit</div>
     <div class="acct-desc">
-        <input id="deposit" placeholder="Deposit Amount">
+        <input id="deposit" placeholder="Deposit Amount" onkeyup="deposit(event)">
         <p id="deposit-msg"></p>
     </div>
 </div>
 <div class="sav-acct-info">
     <div class="acct-head">Withdraw</div>
     <div class="acct-desc">
-        <input id="withdraw" placeholder="Withdraw Amount">
+        <input id="withdraw" placeholder="Withdraw Amount" onkeyup="withdraw(event)">
         <p id="withdraw-msg"></p>
     </div>
 </div>
@@ -57,6 +57,7 @@
         <th align="left" valign="middle" scope="col">Date</th>
         <th align="left" valign="middle" scope="col">Type</th>
         <th align="left" valign="middle" scope="col">Amount</th>
+        <th align="left" valign="middle" scope="col">Total Amount</th>
     </tr>
 </table>
 <script src="js/main.js"></script>
