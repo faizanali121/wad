@@ -1,3 +1,7 @@
+<?php
+include "Server/phpmaincode.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,18 +68,9 @@
                     Categories
                 </a>
                 <ul class="collapse show list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a class="nav-link"  href="#">Laptops</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Computers</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Mobiles</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Tablets</a>
-                    </li>
+                    <?php
+                    getCategory();
+                    ?>
                 </ul>
             </li>
             <li class="active">
@@ -84,18 +79,9 @@
                     Brands
                 </a>
                 <ul class="collapse show list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a class="nav-link" href="#">Apple</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Sony</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Dell</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Toshiba</a>
-                    </li>
+                    <?php
+                    getBrand();
+                    ?>
                 </ul>
             </li>
             <li>
